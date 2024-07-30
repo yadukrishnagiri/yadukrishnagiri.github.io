@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c0c01681aa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Certificates</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p></p>
+            <h1>Hi, I'm <span>Yadu</span><br>krishna a Data Science<br>& AI Enthusiast</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="IMG_20221021_005529.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>As a dynamic fourth-year B.Tech student specializing in Data Science and AI, I am passionate about coding and eager to apply my skills as a Data Science intern. With hands-on experience in machine learning, computer vision, and data analysis, demonstrated through projects like Real-Time Facial Recognition and Happiness Index Dataset Analysis, I bring a fresh perspective and a hunger for learning. Ready to dive into challenging projects, I am committed to bridging creativity and functionality in data science. Let's collaborate to create impactful solutions and elevate your team's success</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>HTML/CSS/JS</span><br>Frontend Developer</li>
+                        <li><span>Python</span><br>Python Developer</li>
+                        <li><span>R</span><br>Data analyst</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Oct 2022 - Nov 2022</span><br>Internship at Skolar.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Bachelor of technology</span><br>Computer science engineering specialized in Artificial intelligence and Data Science</li>
+                        <li><span>High Secondary School</span><br>SNM Higher Secondary School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Certificates</h1>
+        <div class="services-list">
+            <div>
+                <h2>Artificial Intelligence Analyst</h2>
+                <p>Certified in designing and implementing AI solutions.</p>
+                <a href="https://drive.google.com/file/d/1k0BJiEFvjsN5QJPnIGQoXNa70HAxFXYv/view?usp=sharing">Learn more</a>
+            </div>
+            <div>
+                <h2>Machine Learning with R</h2>
+                <p>Skilled in supervised and unsupervised learning.</p>
+                <a href="https://drive.google.com/file/d/1-hJZhrywUGJPmZfyOsD_xyaukgYMCo5z/view?usp=sharing">Learn more</a>
+            </div>
+            <div>
+                <h2>IBM Introduction to Python</h2>
+                <p>Basic knowledge of Python programming.</p>
+                <a href="https://drive.google.com/file/d/16g3IgA9hvR59cGPuVaY45JXvlzT6x2yB/view?usp=sharing">Learn more</a>
+            </div>
+            <div>
+                <h2>IBM Cloud Application Developer</h2>
+                <p>Basic knowledge in IBM Cloud applications.</p>
+                <a href="https://drive.google.com/file/d/1jDSXwWvnKsjz7HNqhFPK1k73xKMvEEiv/view?usp=sharing">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="https://th.bing.com/th/id/OIG4.mUF1mBJ5K8J9ojmheM1v?w=1024&h=1024&rs=1&pid=ImgDetMain">
+                <div class="layer">
+                    <h3>Facial Landmark Mouse Control</h3>
+                    <p>The Eye Controlled Mouse is an innovative project that utilizes computer vision and machine learning to enable hands-free control of a computer mouse using eye movements. By leveraging the power of OpenCV, MediaPipe, and PyAutoGUI.</p>
+                    <a href="https://github.com/yadukrishnagiri/wireless_mouse"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="https://th.bing.com/th/id/OIG4.ueef5ZXTUzuvscRSq2nW?pid=ImgGn">
+                <div class="layer">
+                    <h3>Happiness Index Dataset Analysis</h3>
+                    <p>This Jupyter Notebook provides a foundational framework for exploring and analyzing the World Happiness Report dataset. By incorporating essential Python libraries for data manipulation, visualization, and modeling.</p>
+                    <a href="https://github.com/yadukrishnagiri/happiness-index-dataset-evaluation"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="https://th.bing.com/th/id/OIG4.Y03T3jQ1v4BwyyXro2lZ?pid=ImgGn">
+                <div class="layer">
+                    <h3>Youtube video Transcriper</h3>
+                    <p>This project is a comprehensive solution for downloading audio from YouTube videos, transcribing the audio using OpenAI's Whisper model, and summarizing the transcribed text using a Transformer-based model from Hugging Face's transformers library.</p>
+                    <a href="https://github.com/yadukrishnagiri/YouTube-Audio-Transcription-and-Summarization"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="https://th.bing.com/th/id/OIG3.Ji7Ha8KcvhEBcUcmO8gr?pid=ImgGn">
+                <div class="layer">
+                    <h3>Real-Time Facial Recognition System</h3>
+                    <p>This project focuses on building a face recognition and identification system using OpenCV, TensorFlow, and Keras. The system captures images of individuals, processes them to detect faces, and trains a model to recognize and identify individuals based on their facial features.</p>
+                    <a href="https://github.com/yadukrishnagiri/face_recognition"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>yadukrishnagirikg@gmail.com </p>
+                <p><i class="fas fa-phone-square-alt"></i>7736729202 </p>
+
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100058912613373"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/YADUKRISHNGIRi"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/_yadukrish_na?igsh=NTVzdTRlcDk5MzJp"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/yadukrishnagiri"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="https://drive.google.com/file/d/11lZ9bvg8irh0wuDVbejU2uUDqOwjK52J/view?usp=sharing" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Yadukrishnagiri.</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzOHI0yrzGh95y2gd8YYEl2Wmyu0PjLcWtkZyQyNHz2PJUNb7m8_Xp05kbPF9x8U47TNg/exec' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
